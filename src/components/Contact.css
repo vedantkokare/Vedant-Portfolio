@@ -1,0 +1,116 @@
+.contact-band {
+  width: 100%;
+  background-color: var(--contact-bg);
+  color: var(--contact-text);
+  border-top: 1px solid var(--hairline);
+  padding-top: var(--section-py);
+  padding-bottom: clamp(3rem, 5vw, 4.5rem);
+}
+
+.contact-label {
+  color: var(--contact-muted);
+}
+
+.contact-email-block {
+  padding-top: 1.5rem;
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--contact-hairline);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.contact-huge-email {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.18rem, 4.8vw, 3.75rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--contact-text);
+  border-bottom: 2px solid transparent;
+  transition: border-color 180ms ease;
+  word-break: break-word;
+}
+
+.contact-huge-email:hover {
+  border-bottom-color: var(--accent);
+}
+
+.contact-copy-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.25rem;
+  border-radius: 9999px;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: var(--contact-card);
+  color: var(--contact-text);
+  border: 1px solid var(--contact-hairline);
+  transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.contact-copy-btn:hover {
+  border-color: var(--accent);
+}
+
+.contact-copy-btn.is-copied {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--on-accent);
+}
+
+.contact-details-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem;
+  padding-top: clamp(2rem, 4vw, 3rem);
+}
+
+.contact-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.contact-detail-label {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--contact-muted);
+}
+
+.contact-detail-value {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--contact-text);
+  border-bottom: 1px solid transparent;
+  align-self: flex-start;
+  transition: border-color 160ms ease;
+}
+
+a.contact-detail-value:hover {
+  border-bottom-color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .contact-details-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}

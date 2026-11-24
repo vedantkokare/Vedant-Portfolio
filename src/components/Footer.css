@@ -1,0 +1,33 @@
+.site-footer {
+  background-color: var(--contact-bg);
+  color: var(--contact-muted);
+  border-top: 1px solid var(--contact-hairline);
+  padding: 1.75rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-copy {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--contact-muted);
+}
+
+.footer-top-link {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--contact-text);
+  border-bottom: 1px solid var(--contact-hairline);
+  padding-bottom: 2px;
+  transition: border-color 160ms ease;
+}
+
+.footer-top-link:hover {
+  border-bottom-color: var(--accent);
+}
